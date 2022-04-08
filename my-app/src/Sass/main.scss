@@ -1,0 +1,11 @@
+//Helpers
+@import './Helpers/mixin';
+@import './Helpers/variables';
+//base 
+@import './base/reset';
+//layout
+@import './layout/navbar';
+//pages
+@import './pages/createCV';
+//component 
+@import './components/createInfo'
