@@ -1,8 +1,6 @@
 import { Col, Row } from 'antd';
+import { CreateInfo, DemoCV } from 'Components';
 import React from 'react'
-import CreateInfo from '../../../Components/CreateInfo/CreateInfo';
-// import CreateInfo from '../../Component/CreateInfo/CreateInfo';
-// import DemoCV from '../../Component/DemoCV/DemoCV';
 
 const CreateCV: React.FC = () => {
     return (
@@ -12,7 +10,7 @@ const CreateCV: React.FC = () => {
                     <CreateInfo />
                 </Col>
                 <Col span={9}>
-                    {/* <DemoCV /> */}
+                    <DemoCV />
                 </Col>
             </Row>
         </div >

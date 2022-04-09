@@ -1,0 +1,27 @@
+.blur_bg {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+    background-color: #f5f8fa;
+    border-radius: 10px;
+    padding: 35px 20px;
+    .cv_title {
+        color: rgb(24, 24, 24);
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+    .cv_place {
+        width: 150px;
+        height: 100%;
+        border: 1px solid black;
+    }
+    .resume_cv_content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        b {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.background_gradient {
+  background: linear-gradient(117.76deg, rgba(255, 255, 255, 0.6) -7.21%, rgba(255, 255, 255, 0.3) 118.08%);
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02) !important;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02) !important;
+  height: 100vh;
+  width: 710px;
+  position: fixed;
+  right: 0;
+  padding-top: 17px;
+}
+
+.background_gradient .custom_inputPa input {
+  border: none !important;
+  padding: 0 !important;
+  width: 13px !important;
+}
+/*# sourceMappingURL=demoCV.css.map */

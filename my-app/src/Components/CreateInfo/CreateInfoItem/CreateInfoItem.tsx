@@ -2,6 +2,8 @@ import { Button } from 'antd';
 import React from 'react';
 import { buttonSkill, iconSteps } from './CreateInfoItem.types';
 
+
+
 export const ButtonSkillItem: React.FC<buttonSkill> = (props: buttonSkill) => {
     const { title, className, src } = props;
     return (

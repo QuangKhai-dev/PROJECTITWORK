@@ -1,0 +1,56 @@
+@import './../Helpers/variables';
+.background_gradient {
+    background: linear-gradient( 117.76deg, hsla(0, 0%, 100%, 0.6) -7.21%, hsla(0, 0%, 100%, 0.3) 118.08%);
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02) !important;
+    height: 100vh;
+    width: 710px;
+    position: fixed;
+    right: 0;
+    padding-top: 17px;
+    .custom_inputPa input {
+        border: none !important;
+        padding: 0 !important;
+        width: 13px !important;
+    }
+    .form-CV {
+        width: 650px;
+        height: 770px;
+        background-color: #fff;
+        border-radius: 5;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 8%);
+        border: 1px solid gray;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    .select {
+        display: flex;
+        width: 700px;
+        padding: 20px 25px;
+        justify-content: space-between;
+        .select_template_button {
+            display: flex;
+            justify-content: center;
+            padding: 20px 25px;
+            background-color: inherit;
+            align-items: center;
+            font-size: 17px;
+            &:hover {
+                background-color: rgba(15, 20, 30, 0.15) !important;
+                border-radius: 19px;
+            }
+        }
+        .download_PDF button {
+            border-radius: 5px;
+            background-color: #222260 !important;
+            border: none;
+            &:hover {
+                background-color: #35357c !important;
+                border: none !important;
+            }
+        }
+    }
+}

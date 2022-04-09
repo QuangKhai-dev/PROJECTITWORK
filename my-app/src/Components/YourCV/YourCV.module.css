@@ -1,0 +1,101 @@
+.profile_layout {
+    padding-left: 20px;
+    padding-top: 20px;
+    background: #d4d6e0;
+    color: #222260;
+}
+
+.profile_layout button {
+    width: 50px;
+}
+
+.profile_layout h5 {
+    font-weight: 700;
+}
+
+.profile_layout p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cv_user {
+    background-color: #fcfafb;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.profile_dropdown {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.profile_title {
+    padding: 15px 25px 10px 25px;
+    border-bottom: 1px solid #c1c8d1da;
+}
+
+.remuse_title {
+    padding: 15px 25px 10px 25px;
+    border-bottom: 1px solid #c1c8d1da;
+}
+
+.resume_show {
+    padding: 25px;
+}
+
+.user_info {
+    position: relative;
+    border-radius: 5px;
+    border-bottom: 1px solid #c1c8d1da;
+    border-top: 1px solid #c1c8d1da;
+}
+
+.feedback_show {
+    padding: 20px 25px;
+}
+
+.download_button a {
+    position: relative;
+}
+
+.download_button a span::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: " ";
+    background-color: #059dff;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.download_button a:hover span::after {
+    width: 100%;
+}
+
+.download_button a:hover {
+    color: #059dff !important;
+}
+
+.blur_bg {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.cv_title {
+    position: relative;
+}
+
+.cv_title::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: linear-gradient( 95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+    transition: all 0.5s;
+}
+
+.cv_title:hover::after {
+    width: 100px;
+}

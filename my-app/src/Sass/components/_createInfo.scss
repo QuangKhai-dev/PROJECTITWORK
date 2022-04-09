@@ -52,6 +52,15 @@
                 margin-bottom: 0;
             }
         }
+        .input_style_error {
+            display: flex;
+            padding: 5px 10px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            background: #fef1f2;
+            border: 1px solid #e36c77;
+        }
         .select_style {
             width: 100%;
             border-radius: 5px;
@@ -306,5 +315,34 @@
             color: white;
             padding: 8px 18px;
             border: none;
+        }
+    }
+    
+    .content-pop {
+        font-weight: 500;
+        max-width: 700px;
+        transition: transform 0.14s ease 0s;
+        transform-origin: 50% 0px;
+        .percent-skills {
+            display: flex;
+            flex-flow: row wrap;
+            transition: opacity 0.14s ease 0s;
+            padding: 12px 20px;
+            .percent-skills-title {
+                flex: 0 0 50%;
+                display: block;
+                padding: 6px;
+                cursor: pointer;
+                width: 100%;
+                font-size: 15px;
+                line-height: 20px;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                .point {
+                    color: green;
+                }
+            }
         }
     }

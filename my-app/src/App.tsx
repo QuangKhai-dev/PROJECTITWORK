@@ -5,6 +5,7 @@ import './App.scss';
 import './css/main.css'
 import UserTemplate from './Templates/UserTemplate/UserTemplate';
 import CreateCV from './Pages/User/CreateCV/CreateCV';
+import ProfileUser from './Pages/User/ProfileUser/ProfileUser';
 
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Route>
         <UserTemplate exact path="/" Component={CreateCV} />
+        <UserTemplate exact path="/user" Component={ProfileUser} />
       </Route>
     </BrowserRouter >
   );

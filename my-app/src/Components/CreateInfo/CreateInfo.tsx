@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import styles from "./CreateInfo.module.css";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import { Col, Image, Progress, Row, Steps, Popover } from "antd";
 import { WarningFilled } from '@ant-design/icons';
@@ -9,36 +8,36 @@ import { DragDropContext, Draggable, Droppable, DropResult } from "react-beautif
 const { Step } = Steps;
 
 const content = (
-   <div className={styles.content_pop}>
-      <div className={styles.percent_skills}>
-         <div className={styles.percent_skills_title}>
+   <div className='content-pop'>
+      <div className='percent-skills'>
+         <div className='percent-skills-title'>
             <a href="a">
-               <span className={styles.point}>+10%</span> Add profile summary
+               <span className='point'>+10%</span> Add profile summary
             </a>
          </div>
-         <div className={styles.percent_skills_title}>
+         <div className='percent-skills-title'>
             <a href="b">
-               <span className={styles.point}>+8%</span> Add job title
+               <span className='point'>+8%</span> Add job title
             </a>
          </div>
-         <div className={styles.percent_skills_title}>
+         <div className='percent-skills-title'>
             <a href="c">
-               <span className={styles.point}>+7%</span> Add employment history
+               <span className='point'>+7%</span> Add employment history
             </a>
          </div>
-         <div className={styles.percent_skills_title}>
+         <div className='percent-skills-title'>
             <a href="d">
-               <span className={styles.point}>+7%</span> Add education
+               <span className='point'>+7%</span> Add education
             </a>
          </div>
-         <div className={styles.percent_skills_title}>
+         <div className='percent-skills-title'>
             <a href="e">
-               <span className={styles.point}>+7%</span> Add references
+               <span className='point'>+7%</span> Add references
             </a>
          </div>
-         <div className={styles.percent_skills_title}>
+         <div className='percent-skills-title'>
             <a href="f">
-               <span className={styles.point}>+6%</span> Add skills
+               <span className='point'>+6%</span> Add skills
             </a>
          </div>
       </div>
@@ -79,7 +78,7 @@ interface LevelButton {
    transForm: Number,
 }
 
-const CreateInfo: React.FC = () => {
+export const CreateInfo: React.FC = () => {
    const [show, setShow] = useState<string>('none');
    const [level, setLevel] = useState<LevelButton>({
       titleLevel: 'Novice',
@@ -157,7 +156,7 @@ const CreateInfo: React.FC = () => {
                                              <label htmlFor="fullName" style={{ color: '#e04e5c' }}>PLease Enter Your Email</label>
                                              <p >Error message</p>
                                           </div>
-                                          <div className={styles.input_style_error}>
+                                          <div className='input_style_error'>
                                              <input id="fullName" type="text" />
                                              <WarningFilled />
                                           </div>
@@ -167,7 +166,7 @@ const CreateInfo: React.FC = () => {
                                              <label htmlFor="fullName" style={{ color: '#e04e5c' }}>PLease Enter Your Phone</label>
                                              <p >Error message</p>
                                           </div>
-                                          <div className={styles.input_style_error}>
+                                          <div className='input_style_error'>
                                              <input id="fullName" type="text" />
                                              <WarningFilled />
                                           </div>
@@ -318,9 +317,9 @@ const CreateInfo: React.FC = () => {
             style={{ borderRadius: "10px", padding: "25px 45px 25px 25px", marginTop: '30px' }}>
             <Col id="skill" span={24}>
                <Row className="skill-title">
+                  <img width={40} style={{ marginRight: '15px' }} src="./Img/skill_title.png" alt="" />
                   <h4 style={{ color: "#181818", fontWeight: 600, marginBottom: "0" }}>
-                     Skills{" "}
-                     <img width={40} src="./Img/skill_title.png" alt="" />
+                     Skills
                   </h4>
                   <button className='buttonSkill'>
                      Fill from CyberSoft
@@ -434,11 +433,11 @@ const CreateInfo: React.FC = () => {
                   </Col>
                </Row>
             </Col>
-            <Col id="experience" style={{ marginTop: '50px' }} span={24}>
+            <Col id="experience" style={{ marginTop: '30px' }} span={24}>
                <Row className="skill-title">
+                  <img width={40} style={{ marginRight: '15px' }} src="./Img/skill_title.png" alt="" />
                   <h4 style={{ color: "#181818", fontWeight: 600, marginBottom: "0" }}>
-                     Skills{" "}
-                     <img width={40} src="./Img/skill_title.png" alt="" />
+                     Experience
                   </h4>
                   <button className='buttonSkill'>
                      Fill from CyberSoft
@@ -552,26 +551,7 @@ const CreateInfo: React.FC = () => {
                   </Col>
                </Row>
             </Col>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
-            <p>hehe</p>
+
          </Row >
 
       </div >

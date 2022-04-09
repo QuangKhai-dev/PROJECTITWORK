@@ -1,6 +1,6 @@
 .navbar {
-  max-width: 1300px;
   margin: 0 auto;
+  padding: 8px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +144,22 @@
 .input-layout .label-notification p {
   font-size: 13px;
   margin-bottom: 0;
+}
+
+.input-layout .input_style_error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #fef1f2;
+  border: 1px solid #e36c77;
 }
 
 .input-layout .select_style {
@@ -648,5 +664,250 @@
   color: white;
   padding: 8px 18px;
   border: none;
+}
+
+.content-pop {
+  font-weight: 500;
+  max-width: 700px;
+  -webkit-transition: -webkit-transform 0.14s ease 0s;
+  transition: -webkit-transform 0.14s ease 0s;
+  transition: transform 0.14s ease 0s;
+  transition: transform 0.14s ease 0s, -webkit-transform 0.14s ease 0s;
+  -webkit-transform-origin: 50% 0px;
+          transform-origin: 50% 0px;
+}
+
+.content-pop .percent-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-transition: opacity 0.14s ease 0s;
+  transition: opacity 0.14s ease 0s;
+  padding: 12px 20px;
+}
+
+.content-pop .percent-skills .percent-skills-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: block;
+  padding: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.content-pop .percent-skills .percent-skills-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.content-pop .percent-skills .percent-skills-title .point {
+  color: green;
+}
+
+.background_gradient {
+  background: linear-gradient(117.76deg, rgba(255, 255, 255, 0.6) -7.21%, rgba(255, 255, 255, 0.3) 118.08%);
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02) !important;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02) !important;
+  height: 100vh;
+  width: 710px;
+  position: fixed;
+  right: 0;
+  padding-top: 17px;
+}
+
+.background_gradient .custom_inputPa input {
+  border: none !important;
+  padding: 0 !important;
+  width: 13px !important;
+}
+
+.background_gradient .form-CV {
+  width: 650px;
+  height: 770px;
+  background-color: #fff;
+  border-radius: 5;
+  -webkit-box-shadow: 0 2px 4px black;
+          box-shadow: 0 2px 4px black;
+  border: 1px solid gray;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.background_gradient .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  padding: 20px 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.background_gradient .select .select_template_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 25px;
+  background-color: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+}
+
+.background_gradient .select .select_template_button:hover {
+  background-color: rgba(15, 20, 30, 0.15) !important;
+  border-radius: 19px;
+}
+
+.background_gradient .select .download_PDF button {
+  border-radius: 5px;
+  background-color: #222260 !important;
+  border: none;
+}
+
+.background_gradient .select .download_PDF button:hover {
+  background-color: #35357c !important;
+  border: none !important;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.profile_layout {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.content_user .inner h4 {
+  font-size: 30px;
+  margin-bottom: 13px;
+  color: #181818;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.content_user .inner p {
+  color: #65676b;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.content_user .inner ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content_user .inner ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.content_user .inner .dowload_button a {
+  position: relative;
+}
+
+.content_user .inner .dowload_button a span::after {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  content: " ";
+  background-color: #059dff;
+  height: 2px;
+  width: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.content_user .inner .dowload_button a:hover {
+  color: #059dff !important;
+}
+
+.content_user .inner .dowload_button a:hover span::after {
+  width: 100%;
+}
+
+.rank_score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.rank_score h2 {
+  text-align: center;
+  color: #28a745;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.rank_score h4 {
+  font-size: 60px;
+  color: #28a745;
+}
+
+.blur_bg {
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+  background-color: #f5f8fa;
+  border-radius: 10px;
+  padding: 35px 20px;
+}
+
+.blur_bg .cv_title {
+  color: #181818;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.blur_bg .cv_place {
+  width: 150px;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.blur_bg .resume_cv_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+.blur_bg .resume_cv_content b {
+  color: red;
+}
+
+.gradient_text {
+  background: -webkit-linear-gradient(95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
